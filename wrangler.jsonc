@@ -27,7 +27,7 @@
   "assets": {
     "directory": "./static",
     "binding": "ASSETS"
-  }
+  },
 
   "upload_source_maps": true
 }
