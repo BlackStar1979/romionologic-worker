@@ -1,16 +1,14 @@
 {
-  "name": "romionologic-worker",
-  "version": "0.0.0",
-  "private": true,
+  "name": "romionologic",
+  "version": "0.1.0",
+  "description": "Cloudflare Worker obsługujący subdomenę worker.romionologic.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlackStar1979/romionologic-worker.git"
+  },
   "scripts": {
     "deploy": "wrangler deploy",
-    "dev": "wrangler dev",
-    "start": "wrangler dev",
-    "test": "vitest"
+    "dev": "wrangler dev"
   },
-  "devDependencies": {
-    "@cloudflare/vitest-pool-workers": "^0.12.4",
-    "vitest": "~3.2.0",
-    "wrangler": "^4.90.0"
-  }
+  "dependencies": {}
 }

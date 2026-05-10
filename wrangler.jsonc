@@ -1,9 +1,6 @@
-/**
- * https://developers.cloudflare.com/workers/wrangler/configuration/
- */
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "romionologic-worker",
+  "name": "romionologic",
   "main": "src/index.js",
   "compatibility_date": "2026-05-10",
   "compatibility_flags": ["nodejs_compat"],
@@ -23,7 +20,7 @@
       "head_sampling_rate": 1
     }
   },
-  
+
   "assets": {
     "directory": "./static",
     "binding": "ASSETS"
