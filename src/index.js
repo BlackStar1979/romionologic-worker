@@ -9,7 +9,15 @@
  */
 
 export default {
-	async fetch(request, env, ctx) {
-		return new Response("Hello World!");
-	},
+  async fetch(request, env, ctx) {
+    const url = new URL(request.url);
+
+    // Główna strona → zwracamy index.html z folderu public
+    if (url.pathname === "/" || url.pathname === "") {
+      return env.ASSETS.fetch(request);
+    }
+
+    // Wszystkie inne pliki statyczne (css, js, obrazy itp.)
+    return env.ASSETS.fetch(request);
+  },
 };

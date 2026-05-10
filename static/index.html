@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ROMION O'LOGIC™</title>
+  <meta name="description" content="ROMION O'LOGIC™ — nowa perspektywa na rzeczywistość. Projekt w przygotowaniu." />
+
+  <style>
+    :root {
+      --bg: #05070b;
+      --panel: rgba(255, 255, 255, 0.06);
+      --text: #e8edf7;
+      --muted: #9aa8bd;
+      --accent: #7cf7d4;
+      --accent2: #8aa7ff;
+      --border: rgba(255, 255, 255, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 20% 20%, rgba(124, 247, 212, 0.16), transparent 30%),
+        radial-gradient(circle at 80% 10%, rgba(138, 167, 255, 0.14), transparent 28%),
+        linear-gradient(135deg, #05070b 0%, #0b1020 50%, #05070b 100%);
+      display: grid;
+      place-items: center;
+      padding: 32px;
+    }
+
+    main {
+      width: min(920px, 100%);
+      border: 1px solid var(--border);
+      background: var(--panel);
+      backdrop-filter: blur(18px);
+      border-radius: 28px;
+      padding: clamp(28px, 6vw, 72px);
+      box-shadow: 0 30px 90px rgba(0, 0, 0, 0.45);
+      position: relative;
+      overflow: hidden;
+    }
+
+    main::before {
+      content: "";
+      position: absolute;
+      inset: -1px;
+      background:
+        linear-gradient(90deg, transparent, rgba(124, 247, 212, 0.22), transparent);
+      height: 1px;
+    }
+
+    .mark {
+      color: var(--accent);
+      font-size: 0.78rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(3rem, 9vw, 7rem);
+      line-height: 0.92;
+      letter-spacing: -0.08em;
+      text-transform: uppercase;
+    }
+
+    .subtitle {
+      margin-top: 24px;
+      font-size: clamp(1.2rem, 3vw, 2rem);
+      color: var(--accent);
+      letter-spacing: -0.03em;
+    }
+
+    p {
+      max-width: 720px;
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.75;
+    }
+
+    .thesis {
+      margin-top: 34px;
+      padding: 22px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: rgba(0, 0, 0, 0.22);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 18px;
+      background: rgba(255, 255, 255, 0.04);
+      min-height: 112px;
+    }
+
+    .card strong {
+      display: block;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .card span {
+      color: var(--muted);
+      font-size: 0.94rem;
+      line-height: 1.45;
+    }
+
+    footer {
+      margin-top: 36px;
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 760px) {
+      body {
+        padding: 18px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        letter-spacing: -0.06em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="mark">alpha / placeholder</div>
+
+    <h1>ROMION<br>O'LOGIC™</h1>
+
+    <div class="subtitle">Nowa perspektywa na rzeczywistość</div>
+
+    <section class="thesis">
+      <p>
+        Teza: czas i przestrzeń nie są fundamentalne — są emergentnymi przejawami
+        sieci hiperrelacji. ROMION O'LOGIC™ to szkic ontologii, w której materia,
+        energia i obserwowalny porządek świata wynikają z dynamiki relacyjnej.
+      </p>
+    </section>
+
+    <div class="grid">
+      <div class="card">
+        <strong>Romiony</strong>
+        <span>Abstrakcyjne jednostki relacji, nie cząstki i nie obiekty przestrzenne.</span>
+      </div>
+
+      <div class="card">
+        <strong>Hiperrelacje</strong>
+        <span>Reguły transformacji sieci, z których wyłaniają się struktury fizyczne.</span>
+      </div>
+
+      <div class="card">
+        <strong>ROMION SIM™</strong>
+        <span>Planowany symulator dynamiki hiperrelacyjnej i emergencji wzorców.</span>
+      </div>
+    </div>
+
+    <footer>
+      <span>romionologic.dev</span>
+      <span>Manifest, symulacje i dokumentacja — w przygotowaniu.</span>
+    </footer>
+  </main>
+</body>
+</html>
